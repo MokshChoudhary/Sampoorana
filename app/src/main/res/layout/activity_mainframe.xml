@@ -9,11 +9,10 @@
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="130dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="64dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +58,7 @@
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="0dp"
-        android:layout_height="62dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="0px"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +71,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="0px"
             android:layout_weight="1"
-            android:text="Button" />
+            android:background="@android:color/holo_blue_dark"
+            android:text="Daily"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button7"
@@ -80,7 +81,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="0px"
             android:layout_weight="1"
-            android:text="Button" />
+            android:background="@android:color/holo_blue_dark"
+            android:text="Avoid"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button6"
@@ -88,27 +91,29 @@
             android:layout_height="wrap_content"
             android:layout_margin="0px"
             android:layout_weight="1"
-            android:text="Button" />
+            android:background="@android:color/holo_blue_dark"
+            android:text="Blood
+"
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/sos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="0px"
             android:layout_weight="1"
-            android:text="Button" />
+            android:background="@android:color/holo_red_dark"
+            android:text="SOS"
+            android:textSize="20sp" />
     </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout4"
+    <ListView
         android:layout_width="0dp"
-        android:layout_height="575dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="664dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
-
-    </RelativeLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
