@@ -127,7 +127,7 @@
         android:layout_marginTop="51dp"
         android:background="@drawable/button_shap"
         android:text="Submit"
-        android:textColor="#3e2723"
+        android:textColor="#fff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
