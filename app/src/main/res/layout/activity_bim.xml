@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main2Activity">
+    tools:context=".bim">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/help"
         android:layout_width="315dp"
         android:layout_height="294dp"
         android:layout_marginStart="51dp"

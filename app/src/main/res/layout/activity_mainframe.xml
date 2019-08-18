@@ -8,13 +8,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:layout_width="0dp"
-        android:layout_height="130dp"
+        android:layout_width="411dp"
+        android:layout_height="142dp"
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -59,58 +58,59 @@
         android:id="@+id/linearLayout6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:orientation="horizontal"
-        android:padding="0px"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/call_daily"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="0px"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
             android:text="Daily"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="0px"
-            android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
-            android:text="Avoid"
-            android:textSize="20sp" />
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:background="#3dc"/>
 
         <Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="0px"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
-            android:text="Blood
-"
-            android:textSize="20sp" />
+            android:text="Avoid"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:background="#3dc"/>
 
         <Button
-            android:id="@+id/sos"
+            android:id="@+id/button7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="0px"
             android:layout_weight="1"
+            android:text="Blood"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:background="#3dc"/>
+
+        <Button
+            android:id="@+id/call_sos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@android:color/holo_red_dark"
             android:text="SOS"
-            android:textSize="20sp" />
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
     </LinearLayout>
 
     <ListView
         android:layout_width="0dp"
-        android:layout_height="664dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
