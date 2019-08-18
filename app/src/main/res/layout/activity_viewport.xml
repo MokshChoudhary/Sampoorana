@@ -5,7 +5,7 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo"
+    android:background="#02A0F5"
     android:orientation="vertical"
     tools:context=".viewport">
 
