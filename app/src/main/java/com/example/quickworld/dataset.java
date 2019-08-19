@@ -1,18 +1,18 @@
 package com.example.quickworld;
 
-import android.media.Image;
+import android.graphics.drawable.Drawable;
 
 public class dataset {
     private String content;
-    private int image;
+    private Drawable image;
     private String description;
-    public dataset(int img, String ucontent, String udescription){
+    public dataset(Drawable img, String ucontent, String udescription){
         content = ucontent;
         image = img;
         description = udescription;
     }
 
-    public int getImage(){
+    public Drawable getImage(){
         return image;
     }
 

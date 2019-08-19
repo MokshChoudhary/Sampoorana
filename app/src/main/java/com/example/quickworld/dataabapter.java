@@ -36,7 +36,7 @@ public class dataabapter extends ArrayAdapter<dataset> {
         disp.setText(enter.getDescription());
 
         ImageView img = check.findViewById(R.id.image);
-        img.setImageDrawable();
+        img.setImageDrawable(enter.getImage());
         return check;
     }
 }
