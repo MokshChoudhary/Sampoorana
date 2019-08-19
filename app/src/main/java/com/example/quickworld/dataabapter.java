@@ -12,12 +12,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class dataabapter extends ArrayAdapter<dataset> {
-    public dataabapter(@NonNull Context context, int resource, @NonNull ArrayList<dataset> objects) {
-        super(context, resource, objects);
+    public dataabapter(@NonNull View.OnClickListener context, int resource, @NonNull ArrayList<dataset> objects) {
+        super((Context) context, resource, objects);
     }
 
     @NonNull
@@ -35,8 +37,8 @@ public class dataabapter extends ArrayAdapter<dataset> {
         TextView disp = check.findViewById(R.id.disp_image);
         disp.setText(enter.getDescription());
 
-        ImageView img = check.findViewById(R.id.image);
-        img.setImageDrawable(enter.getImage());
+        TextView img = check.findViewById(R.id.image);
+        img.setBackgroundColor(enter.getcolor());
         return check;
     }
 }
