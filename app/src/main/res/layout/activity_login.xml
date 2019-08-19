@@ -28,12 +28,11 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:background="@drawable/textshape"
             android:gravity="center"
             android:hint="Anchal"
             android:inputType="textPersonName"
@@ -63,7 +62,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
@@ -74,7 +73,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_width="246dp"
         android:layout_height="64dp"
         android:layout_marginStart="8dp"
