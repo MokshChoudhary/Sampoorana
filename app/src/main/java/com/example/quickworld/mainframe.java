@@ -20,7 +20,7 @@ public class mainframe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainframe);
         Button c = findViewById(R.id.call_sos);
-        ls = findViewById(R.id.list);
+       // ls = findViewById(R.id.list);
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,8 +28,8 @@ public class mainframe extends AppCompatActivity {
                 startActivity(call);
             }
         });
-
-        findViewById(R.id.call_daily).setOnClickListener(new View.OnClickListener() {
+        Button c1 = findViewById(R.id.call_daily);
+        c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 temp = new ArrayList<>();
@@ -39,8 +39,8 @@ public class mainframe extends AppCompatActivity {
                 ls.setAdapter(adapter);
             }
         });
-
-        findViewById(R.id.call_Avoid).setOnClickListener(new View.OnClickListener() {
+            Button c2 = findViewById(R.id.call_Avoid);
+            c2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

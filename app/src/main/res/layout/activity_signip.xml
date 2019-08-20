@@ -120,17 +120,60 @@
             android:spinnerMode="dialog"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Password"
+            android:textColor="#4e342e"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passhint"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Re-Enter Password"
+            android:textColor="#4e342e"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/renter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passhint"
+            android:textSize="18sp" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/submit"
         android:layout_width="194dp"
         android:layout_height="74dp"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/button_shap"
         android:text="Submit"
         android:textColor="#fff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
