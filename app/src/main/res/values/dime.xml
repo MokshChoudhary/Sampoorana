@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Main_Header">56sp</dimen>
+    <dimen name="Header">32sp</dimen>
+    <dimen name="mg_header">16dp</dimen>
+</resources>
