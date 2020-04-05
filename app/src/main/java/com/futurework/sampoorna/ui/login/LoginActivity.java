@@ -6,7 +6,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.content.Intent;
-import android.graphics.Region;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -27,9 +26,6 @@ import android.widget.Toast;
 import com.futurework.sampoorna.MainPage;
 import com.futurework.sampoorna.R;
 import com.futurework.sampoorna.signin;
-import com.futurework.sampoorna.ui.home.HomeFragment;
-import com.futurework.sampoorna.ui.login.LoginViewModel;
-import com.futurework.sampoorna.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -42,8 +38,8 @@ public class LoginActivity extends AppCompatActivity {
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
-        final EditText usernameEditText = findViewById(R.id.username);
-        final EditText passwordEditText = findViewById(R.id.password);
+        final EditText usernameEditText = findViewById(R.id.loginusername);
+        final EditText passwordEditText = findViewById(R.id.loginpassword);
         final Button loginButton = findViewById(R.id.login);
         final Button Register = findViewById(R.id.register);
         final ProgressBar loadingProgressBar = findViewById(R.id.loading);
@@ -142,9 +138,9 @@ public class LoginActivity extends AppCompatActivity {
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
-        Intent I = new Intent(this, MainPage.class);
+        /*Intent I = new Intent(this, MainPage.class);
         overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
-        startActivity(I);
+        startActivity(I);*/
         Toast.makeText(getApplicationContext(), "Welcome!"+welcome+" You are logged in", Toast.LENGTH_LONG).show();
     }
 

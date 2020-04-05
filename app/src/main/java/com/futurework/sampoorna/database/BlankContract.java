@@ -10,11 +10,12 @@ public class BlankContract {
         public final static String _ID = BaseColumns._ID;
         public final static String LOGIN_TABLE_NAME = "sampoorna_user";
         public final static String COLUMNS_USER_NAME = "name";
-        public final static String COLUMNS_USER_BLOOD = "blood group";
+        public final static String COLUMNS_USER_BLOOD = "blood";
         public final static String COLUMNS_USER_GENDER = "gender";
         public static final String COLUMNS_USER_DOB = "dob";
         public final static String COLUMNS_USER_WEIGHT = "weight";
-        public final static  String COLUMNS_USER_PASSWORD = "password";
+        public final static String COLUMNS_USER_PASSWORD = "password";
+        public final static String COLUMNS_USER_IMAGE = "image";
 
         /** these variable defining the type of gender using in the application*/
         public final static int GENDER_UNKNOWN = 0;

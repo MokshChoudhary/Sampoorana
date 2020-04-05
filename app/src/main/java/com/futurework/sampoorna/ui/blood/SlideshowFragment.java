@@ -1,4 +1,4 @@
-package com.futurework.sampoorna.ui.slideshow;
+package com.futurework.sampoorna.ui.blood;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

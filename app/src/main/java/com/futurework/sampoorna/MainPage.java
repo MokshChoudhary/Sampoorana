@@ -1,16 +1,16 @@
 package com.futurework.sampoorna;
 
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.view.MenuItem;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
-import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -22,10 +22,15 @@ import androidx.appcompat.widget.Toolbar;
 public class MainPage extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-
+    private String name;
+    private TextView username;
+    private Bundle savaIntanceState;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        savaIntanceState = savedInstanceState;
+
         setContentView(R.layout.activity_main_page);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -48,24 +53,25 @@ public class MainPage extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        View view = navigationView.getHeaderView(0);
+
+        getUsename();
+
+        username = view.findViewById(R.id.input_name);
+        try{
+            Log.d("CREATOR",name);
+            username.setText(name);
+        }catch (Exception e){
+            //Toast.makeText(this,"Not able to fetch username",Toast.LENGTH_LONG).show();
+            username.setText("Username");
+        }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-
         getMenuInflater().inflate(R.menu.main_page, menu);
         return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.action_settings:
-                overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
-                startActivity(new Intent(this,SettingsActivity.class));
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -74,4 +80,19 @@ public class MainPage extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    private void getUsename(){
+        String newString;
+        if (savaIntanceState == null) {
+            Bundle extras = getIntent().getExtras();
+            if(extras == null) {
+                name = null;
+            } else {
+                name = extras.getString("Username");
+            }
+        } else {
+            name = null;
+        }
+    }
+
 }

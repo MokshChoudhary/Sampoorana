@@ -9,14 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".signin"></activity>
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
         <activity
             android:name=".MainPage"
             android:label="@string/title_activity_main_page"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".signin"
+            android:noHistory="true" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />

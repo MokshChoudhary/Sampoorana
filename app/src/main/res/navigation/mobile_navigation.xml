@@ -14,12 +14,6 @@
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
             app:destination="@id/nav_home_second" />
-        <action
-            android:id="@+id/action_nav_home_to_nav_slideshow"
-            app:destination="@id/nav_slideshow" />
-        <action
-            android:id="@+id/action_nav_home_to_nav_gallery"
-            app:destination="@id/nav_gallery" />
     </fragment>
     <fragment
         android:id="@+id/nav_home_second"
@@ -38,20 +32,12 @@
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.futurework.sampoorna.ui.avoid.GalleryFragment"
-        android:label="@string/menu_avoid"
-        tools:layout="@layout/fragment_avoid" >
-        <action
-            android:id="@+id/action_nav_gallery_to_nav_home"
-            app:destination="@id/nav_home" />
-    </fragment>
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_avoid" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.futurework.sampoorna.ui.slideshow.SlideshowFragment"
+        android:name="com.futurework.sampoorna.ui.blood.SlideshowFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_blood" >
-        <action
-            android:id="@+id/action_nav_slideshow_to_nav_home"
-            app:destination="@id/nav_home" />
-    </fragment>
+        tools:layout="@layout/fragment_blood" />
 </navigation>
