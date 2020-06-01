@@ -1,4 +1,4 @@
-package com.futurework.sampoorna.ui.blood;
+package com.futurework.sampoorna.ui.avoid;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.futurework.sampoorna.R;
 
-public class SlideshowFragment extends Fragment {
+public class AvoidFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private AvoidViewModel avoidViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_blood, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        avoidViewModel =
+                ViewModelProviders.of(this).get(AvoidViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_avoid, container, false);
+        final TextView textView = root.findViewById(R.id.text_gallery);
+        avoidViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

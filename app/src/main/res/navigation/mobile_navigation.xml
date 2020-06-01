@@ -31,13 +31,13 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.futurework.sampoorna.ui.avoid.GalleryFragment"
+        android:name="com.futurework.sampoorna.ui.avoid.AvoidFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_avoid" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.futurework.sampoorna.ui.blood.SlideshowFragment"
+        android:name="com.futurework.sampoorna.ui.blood.DonateZoneFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_blood" />
 </navigation>

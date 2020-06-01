@@ -55,7 +55,7 @@ public class MainPage extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
         View view = navigationView.getHeaderView(0);
 
-        getUsename();
+        getUsername();
 
         username = view.findViewById(R.id.input_name);
         try{
@@ -81,7 +81,7 @@ public class MainPage extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    private void getUsename(){
+    private void getUsername(){
         String newString;
         if (savaIntanceState == null) {
             Bundle extras = getIntent().getExtras();

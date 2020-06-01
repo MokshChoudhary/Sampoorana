@@ -1,4 +1,4 @@
-package com.futurework.sampoorna.ui.blood;
+package com.futurework.sampoorna.ui.slideshow;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
